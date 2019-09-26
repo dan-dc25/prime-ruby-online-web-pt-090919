@@ -9,5 +9,6 @@ def prime?(num)
       else
         return true
       end
+      count += 1
     end
   end
