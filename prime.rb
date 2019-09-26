@@ -1,15 +1,7 @@
 def prime?(num)
-    count = 0
-    arr = (2..num).to_a
-    arr.each do |p|
-      if num < 2
-        return false
-        count += 1
-      elsif num % p == 0
-        return false
-      else
-        return true
-      end
-
-    end
-  end
+  return false if !num.interger?
+  return false if num < 2
+  return true if num == 2
+  (num..num-1).each {|int| return false if num % int == 0}
+  true
+end
