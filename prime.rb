@@ -4,11 +4,12 @@ def prime?(num)
     arr.each do |p|
       if num < 2
         return false
+        count += 1
       elsif num % p == 0
         return false
       else
         return true
       end
-      count += 1
+
     end
   end
